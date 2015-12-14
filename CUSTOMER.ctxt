@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=
+comment0.target=CUSTOMER()
+comment1.params=dataItems
+comment1.target=void\ readCustomerDetails(java.lang.String)
+numComments=2
