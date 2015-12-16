@@ -35,24 +35,28 @@ public class CONCERT
         // update user with number of rows with customer details
         System.out.println("**" + noOfCustomers + " rows read.\n\n");
         customerList = new CUSTOMER[noOfCustomers];
-       
+        for (int i = 0; i < noOfCustomers; i++)
+        {
+            customerList[i] = new CUSTOMER();
+            customerList[i].readCustomerDetails(dataRows[i]);
+        }
     }
 
     public void showyear()
     {
         // placeholder
     }
-    
+
     public void countmethod()
     {
         // placeholder
     }
-    
+
     public void counttotal()
     {
         // placeholder
     }
-    
+
     public void savefridaynightfile()
     {
         // placeholder
