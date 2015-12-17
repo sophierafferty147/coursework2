@@ -6,7 +6,7 @@ public class CUSTOMER
     private char ticketid;
     private int numoftickets;
     private char method;
-    
+
     public CUSTOMER()
     {
         // initialise instance variables
@@ -36,5 +36,10 @@ public class CUSTOMER
         customerData = customerData.concat(",");
         customerData = customerData.concat(Character.toString(method));
         return customerData;
+    }
+
+    public char getmethod()
+    {
+        return method;
     }
 }
