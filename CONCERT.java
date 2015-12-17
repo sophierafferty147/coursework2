@@ -8,11 +8,13 @@ public class CONCERT
     // number of customers to be calculated after reading file
     int noOfCustomers;
     FILEREADCSV customerFile;
+    FILEWRITECSV resultFile;
 
-    public CONCERT()
+    public CONCERT() throws IOException
     {
         // initialise instance variables
         customerFile = new FILEREADCSV();
+        resultFile = new FILEWRITECSV();
     }
 
     public void processCustomer() throws IOException
