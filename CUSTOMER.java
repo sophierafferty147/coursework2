@@ -6,6 +6,8 @@ public class CUSTOMER
     private char ticketid;
     private int numoftickets;
     private char method;
+    public float charitytotal;
+    public char getnight;
 
     public CUSTOMER()
     {
@@ -41,5 +43,15 @@ public class CUSTOMER
     public char getmethod()
     {
         return method;
+    }
+
+    public char getnight()
+    {
+        return ticketid;
+    }
+
+    public int getnumoftickets()
+    {
+        return numoftickets;
     }
 }

@@ -86,14 +86,29 @@ public class CONCERT
         // A blank line to separate this report from others.
         System.out.println();
     }
-    
+
     public void counttotal()
     {
-        // placeholder
+        // start count
+        float total = 0.00f;
+        for (int i = 0; i < noOfCustomers; i++)
+        {
+            if (customerList[i].getnight() == 'F')
+            {
+                total = total + customerList[i].getnumoftickets()*10;
+            }
+            else 
+            {
+                total = total + customerList[i].getnumoftickets()*5;
+            }
+        }
+        System.out.print("total money raised for charity : £" + total );
     }
-
+    
     public void savefridaynightfile()
-    {
-        // placeholder
+        {
+            String fileContent = "";
+            int count = 0;
+            
+        }
     }
-}
