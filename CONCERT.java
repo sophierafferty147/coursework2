@@ -121,9 +121,9 @@ public class CONCERT
                 fileContent = fileContent.concat(customerList[i].writeDetails());
 
             }
-            System.out.println("** Preparing to write Friday night file.");
+        }
+        System.out.println("** Preparing to write Friday night file.");
             resultFile.writeCSVtable(fileContent);
             System.out.println("** File written and closed.");
-        }
     }
 }
